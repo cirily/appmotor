@@ -1,10 +1,8 @@
-# Cutefish AppMotor
+# Cirily AppMotor
 
-Optimize the speed of starting cutefish apps.
+Optimize the speed of starting Cirily apps.
 
-## Dependencies
-
-Debian/Ubuntu Dependencies:
+## Dependencies (For Ubuntu/Debian)
 
 ```shell
 sudo apt install cmake qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev libsystemd-dev libcap-dev libdbus-1-dev
@@ -13,6 +11,8 @@ sudo apt install cmake qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev lib
 ## Build
 
 ```shell
+git clone https://github.com/cirily/appmotor.git 
+cd appmotor
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
