@@ -1,6 +1,6 @@
-# Cirily AppMotor
+# Piscesys AppMotor
 
-Optimize the speed of starting Cirily apps.
+Optimize the speed of starting Pisces apps.
 
 ## Dependencies (For Ubuntu/Debian)
 
