@@ -17,7 +17,7 @@
 **
 ****************************************************************************/
 
-#include "cutefish-appmotor.h"
+#include "pisces-appmotor.h"
 #include "daemon.h"
 
 #include <unistd.h>
@@ -27,14 +27,14 @@
 #include <QApplication>
 #include <QDebug>
 
-const string CutefishBooster::m_boosterType = "cutefish";
+const string PiscesBooster::m_boosterType = "pisces";
 
-const string & CutefishBooster::boosterType() const
+const string & PiscesBooster::boosterType() const
 {
     return m_boosterType;
 }
 
-int CutefishBooster::launchProcess()
+int PiscesBooster::launchProcess()
 {
     Booster::setEnvironmentBeforeLaunch();
 
@@ -58,14 +58,14 @@ int CutefishBooster::launchProcess()
     return EXIT_FAILURE;
 }
 
-void CutefishBooster::initialize(int initialArgc, char **initialArgv, int boosterLauncherSocket,
+void PiscesBooster::initialize(int initialArgc, char **initialArgv, int boosterLauncherSocket,
                            int socketFd, SingleInstance *singleInstance, bool bootMode)
 {
     new QApplication(initialArgc, initialArgv);
     Booster::initialize(initialArgc, initialArgv, boosterLauncherSocket, socketFd, singleInstance, bootMode);
 }
 
-bool CutefishBooster::preload()
+bool PiscesBooster::preload()
 {
     QQuickView window;
     window.create();
@@ -75,7 +75,7 @@ bool CutefishBooster::preload()
 
 int main(int argc, char **argv)
 {
-    CutefishBooster *booster = new CutefishBooster;
+    PiscesBooster *booster = new PiscesBooster;
 
     Daemon d(argc, argv);
     d.run(booster);

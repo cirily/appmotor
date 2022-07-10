@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 cmake_policy(VERSION 3.0)
 
-project(cutefish-appmotor)
+project(pisces-appmotor)
 
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -32,11 +32,11 @@ if ($ENV{DEBUG_BUILD})
 endif ($ENV{DEBUG_BUILD})
 
 # Set the program name defines. Must be at this level due to unit tests.
-add_definitions(-DPROG_NAME_INVOKER="cutefish-invoker")
-add_definitions(-DPROG_NAME_SINGLE_INSTANCE="cutefish-single-instance")
+add_definitions(-DPROG_NAME_INVOKER="pisces-invoker")
+add_definitions(-DPROG_NAME_SINGLE_INSTANCE="pisces-single-instance")
 
 # applauncherd will try to load single-instance using this path
-add_definitions(-DSINGLE_INSTANCE_PATH="/usr/bin/cutefish-single-instance")
+add_definitions(-DSINGLE_INSTANCE_PATH="/usr/bin/pisces-single-instance")
 
 # Disable debug logging, only error and warning messages get logged
 # Currently effective only for invoker. Launcher part recognizes --debug

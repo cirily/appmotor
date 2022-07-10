@@ -7,5 +7,5 @@ add_subdirectory(launcherlib)
 # Sub build: single-instance binary / library
 add_subdirectory(single-instance)
 
-# Sub build: cutefish app booster plugin
-add_subdirectory(cutefish-appmotor)
+# Sub build: pisces app booster plugin
+add_subdirectory(pisces-appmotor)

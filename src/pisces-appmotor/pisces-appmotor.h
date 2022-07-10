@@ -23,18 +23,18 @@
 #include "booster.h"
 
 /*!
- * \class CutefishBooster.
+ * \class PiscesBooster.
  * \brief Qt-specific version of the Booster.
  */
-class CutefishBooster : public Booster
+class PiscesBooster : public Booster
 {
 public:
 
     //! Constructor.
-    CutefishBooster() {};
+    PiscesBooster() {};
 
     //! Destructor.
-    virtual ~CutefishBooster() {};
+    virtual ~PiscesBooster() {};
 
     //! \reimp
     virtual const string & boosterType() const;
@@ -53,10 +53,10 @@ protected:
 private:
 
     //! Disable copy-constructor
-    CutefishBooster(const CutefishBooster & r);
+    PiscesBooster(const PiscesBooster & r);
 
     //! Disable assignment operator
-    CutefishBooster & operator= (const CutefishBooster & r);
+    PiscesBooster & operator= (const PiscesBooster & r);
 
     static const string m_boosterType;
 };

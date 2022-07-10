@@ -22,3 +22,9 @@ tests/perftests/launcher_perf.txt
 build-stamp
 configure-stamp
 build
+debian/.debhelper
+debian/files
+debian/appmotor
+obj-x86_64-linux-gnu/
+**.buildinfo
+**.changes

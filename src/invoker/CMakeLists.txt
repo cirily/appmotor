@@ -12,12 +12,12 @@ set(SRC invokelib.c invoker.c ${COMMON}/report.c search.c)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${DBUS_INCLUDE_DIRS} ${GLIB_INCLUDE_DIRS} ${COMMON})
 
 # Set precompiler flags
-add_definitions(-DPROG_NAME_INVOKER="cutefish-invoker")
+add_definitions(-DPROG_NAME_INVOKER="pisces-invoker")
 
 # Set target
-add_executable(cutefish-invoker ${SRC})
+add_executable(pisces-invoker ${SRC})
 
-target_link_libraries(cutefish-invoker ${DBUS_LDFLAGS} ${GLIB_LDFLAGS})
+target_link_libraries(pisces-invoker ${DBUS_LDFLAGS} ${GLIB_LDFLAGS})
 
 # Add install rule
-install(TARGETS cutefish-invoker DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
+install(TARGETS pisces-invoker DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
